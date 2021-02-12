@@ -14,7 +14,7 @@ In order to build, execute `docker build -t dockergetstarted/frontend .` from wi
 
 After you built it successfully, you can start the container:
 
-`docker run --it --name myfirstdockerfrontend dockergetstarted/frontend`
+`docker run -it --name myfirstdockerfrontend dockergetstarted/frontend`
 
 However this will not yet work, as you must make sure that you expose the ports to the host machine - how can you do that?
 
