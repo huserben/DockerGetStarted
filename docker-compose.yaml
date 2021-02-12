@@ -1,0 +1,20 @@
+version: "3.8"
+services:  
+  frontend:
+    build:
+      context: python
+      dockerfile: Dockerfile
+    image: dockerintro/frontend
+    ports:
+      - "1337:5000"
+    environment:
+      REST_API: http://backend:8888
+    depends_on:
+      - "backend"
+  backend:  
+    build:
+      context: golang
+      dockerfile: Dockerfile
+    image: "dockerintro/backend"
+    environment:
+      RETURN_VALUE: This is coming from docker compose!
