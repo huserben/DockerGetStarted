@@ -14,7 +14,7 @@ In order to build, execute `docker build -t dockergetstarted/backend .` from wit
 
 After you built it successfully, you can start the container:
 
-`docker run --it --name myfirstdockerbackend dockergetstarted/backend`
+`docker run -it --name myfirstdockerbackend dockergetstarted/backend`
 
 However this will not yet work, as you must make sure that you expose the ports to the host machine - how can you do that?
 
