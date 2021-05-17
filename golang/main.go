@@ -18,6 +18,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	log.Println("Started Listening")
     http.HandleFunc("/", handler)
     log.Fatal(http.ListenAndServe(":8888", nil))
 }
